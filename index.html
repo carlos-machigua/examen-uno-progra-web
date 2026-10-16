@@ -6,66 +6,525 @@
         <title>Exámen Uno</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
 
 
     <body> 
-        <!--Los style embedidos son temporales solo para visualización-->
-        <header style="background-color: aqua;">
+                
+        <nav class="navbar navbar-expand-lg sticky-top shadow-sm py-3 bg-info flex-column">
             
-            <div>
-                <img src="./assets/img/placeholder_imagen" alt="Logo de la Empresa">
+            <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="#top">
+                    
+                    <img class="tamañoImagen" src="./assets/img/logo_negocio.gif" alt="Logo de la Empresa">
+                    <div class="d-flex flex-column align-items-start">
+                        
+                        <span>Ferretería Sánchez</span>
+                        <span class="badge bg-info text-dark">San Pedro Sula</span>
+
+                    </div>
+                
+                </a> 
+                
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Abrir Navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li><a class="nav-link px-3" href="#top">Inicio</a></li>
+                        <li><a class="nav-link px-3" href="#catalogo">Catálogo</a></li>
+                        <li><a class="nav-link px-3" href="#ofertas">Ofertas del Mes</a></li>
+                        <li><a class="nav-link px-3" href="#cotizaciones">Cotizaciones</a></li>
+                        <li><a class="nav-link px-3" href="#contacto">Contacto</a></li>
+                        <li><a class="nav-link px-3 btn rounded-pill px-4 fw-bold btn-success text-light" href="whatsapp.com/msg">Cotizar por Whatsapp</a></li>
+
+                    </ul>
+
+                </div>
+                    
             </div>
 
-            <nav>
+            <div class="container-fluid">
 
-                <div>
-                    <a href="#top">Inicio</a>
-                    <a href="#catalogo">Catálogo</a>
-                    <a href="#ofertas">Ofertas del Mes</a>
-                    <a href="#cotizaciones">Cotizaciones</a>
-                    <a href="#contacto">Contacto</a>
-                    <a href="whatsapp.com/msg"><img src="./assets/img/logo_whats.jpg">Cotizar por Whatsapp</a>
-                </div>
+                <div class="w-100 align-items-center justify-content-center text-center gap-3 flex-wrap">
 
-                <div>
                     <span>Horario de atención: Lunes a Sábado 7am-5pm</span>
+                    <span> | </span>
                     <span>Atención al Cliente: 2235-XXXX, 2452-XXXX</span>
+
                 </div>
-            </nav>
 
-        </header>
-
+            </div>
+        </nav>   
 
         <main>
-            <section id="catalogo">
-                <h2>Catálogo de Productos</h2>
-                <!--Maqueta de los productos-->
-                <article>
-                    <div>
-                        <div>
-
-                            <span>Pastillas de Chiquitolina</span>
-                            
-                        </div>
-                        <img src="./assets/img/catalogo/">
-                    </div>
+            <section id="catalogo" class="py-5 bg-light">
+                <div class="container py-lg-4">
                     
-                    <div>
-                        <span>Categoría: xxxxxxx</span>
-                        <span>Precio: Lps. 999</span>
+                    <!--Título de la sección-->
+                     <div class="text-center mb-5">
+
+                            <span class="badge rounded-pill px-3 py-2 text-uppercase fw-bold text-success">Catálogo Comercial</span>
+                            <h2 class="display-6 fw-bold mt-2">Productos a cotizar disponibles</h2>  
+                    </div>
+
+                    <div class="row g-4">
+
                         
-                        <div>
-                           <span>Detalles Técnicos: </span>
-                           <span>30 Pastillas</span>
-                           <span>500 MG</span>
-                           <span>Efecto dura hasta 1 hora</span> 
+                        <!--Producto maqueta original-->
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                    <img class="card-img-top" style="height: 220px; object-fit: cover;" src="" alt="">
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <span class="badge rounded-pill px-2.5">*Categoría: xxxxx</span>
+                                            </div>
+                                            <h4 class="card-title fw-bold mb-2">*Nombre del producto*</h4>
+                                            <p class="card-text text-secondary small flex-grow-1">Descripción del Producto</p>
+
+                                            <div class="border-top pt-3mt3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <span class="fs-5 fw-bold text-success">*Precio del producto: xxxx</span>
+                                                    <span class="fs-5 fw-bold text-success">
+                                                        Detalles Técnicos:
+                                                        <ul>
+                                                            <li>* los necesarios para dicho producto, por ejemplo: tension nominal en voltios, capacidad en kW/kVA, garantía en años, marca. </li>
+                                                        </ul> 
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
                         </div>
-
+                        
+            <!-- Producto 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/panel_solar.png" alt="Panel solar monocristalino">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Energía solar</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Panel Solar Monocristalino</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Panel fotovoltaico de alta eficiencia para instalaciones residenciales,
+                            comerciales e industriales.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 3,850.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia: 550 W</li>
+                                <li>Tipo: Monocristalino</li>
+                                <li>Tensión de circuito abierto: según modelo</li>
+                                <li>Garantía: referencial de 12 años</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                </article>
+                </div>
+            </div>
 
+            <!-- Producto 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/inversor_hibrido.jpg" alt="Inversor híbrido solar">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Energía solar</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Inversor Híbrido de 5 kW</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Equipo que convierte corriente continua en alterna y permite integrar
+                            paneles solares, baterías y red eléctrica según su configuración.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 28,500.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia nominal: 5 kW</li>
+                                <li>Salida: según versión, 120/240 V CA</li>
+                                <li>Compatibilidad: baterías compatibles</li>
+                                <li>Garantía: referencial de 5 años</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/batería_solar_litio.jpg" alt="Batería solar de litio">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Almacenamiento</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Batería Solar de Litio</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Batería recargable para almacenar la energía generada por paneles
+                            solares y utilizarla cuando sea necesaria.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 32,900.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Química: LiFePO4</li>
+                                <li>Voltaje nominal: 51.2 V</li>
+                                <li>Capacidad: 100 Ah / 5.12 kWh</li>
+                                <li>Sistema de gestión BMS integrado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/controlador_mppt.jpg" alt="Controlador solar MPPT">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Energía solar</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Controlador de Carga MPPT</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Regula la carga de las baterías y optimiza el aprovechamiento
+                            de la energía producida por los paneles solares.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 6,750.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Corriente máxima: 60 A</li>
+                                <li>Tecnología: MPPT</li>
+                                <li>Sistemas: 12/24/48 V, según modelo</li>
+                                <li>Protección contra sobrecargas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/cable_thhn12.jpg" alt="Cable eléctrico de cobre THHN">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Conductores</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Cable Eléctrico THHN 12 AWG</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Conductor de cobre para circuitos eléctricos en canalizaciones
+                            adecuadas de instalaciones residenciales y comerciales.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 18.50 / metro</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Calibre: 12 AWG</li>
+                                <li>Material: cobre</li>
+                                <li>Aislamiento: THHN/THWN-2, según certificación</li>
+                                <li>Tensión nominal: 600 V</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/breaker_bipolar.png" alt="Interruptor termomagnético bipolar">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Protección eléctrica</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Breaker Termomagnético Bipolar</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Dispositivo de protección que interrumpe el circuito ante
+                            sobrecargas y cortocircuitos.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 680.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Corriente nominal: 40 A</li>
+                                <li>Polos: 2</li>
+                                <li>Aplicación: tableros eléctricos</li>
+                                <li>Capacidad de interrupción: según fabricante</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/tablero_distribución.JPG" alt="Tablero de distribución eléctrica">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Distribución eléctrica</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Tablero de Distribución</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Gabinete diseñado para alojar interruptores y distribuir
+                            circuitos eléctricos de forma organizada.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 3,950.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Capacidad: 12 espacios</li>
+                                <li>Material: acero pintado</li>
+                                <li>Montaje: superficial</li>
+                                <li>Tensión nominal: según modelo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/contactor_magnetico.JPG" alt="Contactor magnético industrial">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Automatización industrial</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Contactor Magnético de 32 A</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Permite controlar la conexión y desconexión de motores y
+                            otras cargas eléctricas mediante señales de control.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 1,480.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Corriente nominal: 32 A</li>
+                                <li>Configuración: 3 polos</li>
+                                <li>Bobina: 120 V CA, según versión</li>
+                                <li>Aplicación: control de motores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/variador_frecuencia.jpg" alt="Variador de frecuencia industrial">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Automatización industrial</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Variador de Frecuencia 3 HP</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Regula la velocidad de motores eléctricos y permite ajustar
+                            su funcionamiento a las necesidades del proceso industrial.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 9,800.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia: 3 HP (2.2 kW)</li>
+                                <li>Aplicación: motores de CA</li>
+                                <li>Frecuencia de salida: según modelo</li>
+                                <li>Protección contra sobrecarga, según versión</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/transformador_monofasico.jpg" alt="Transformador monofásico">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Transformación eléctrica</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Transformador Monofásico</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Adapta los niveles de tensión para alimentar equipos que
+                            requieren características eléctricas específicas.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 8,900.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia: 5 kVA</li>
+                                <li>Fases: monofásico</li>
+                                <li>Frecuencia: 60 Hz</li>
+                                <li>Tensiones: según configuración</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 11 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/luminaria_led.jpg" alt="Luminaria LED industrial UFO">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Iluminación industrial</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Luminaria LED Industrial UFO</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Luminaria de alto rendimiento para bodegas, talleres,
+                            almacenes y espacios industriales de gran altura.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 1,750.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia: 150 W</li>
+                                <li>Temperatura de color: 5000 K, según versión</li>
+                                <li>Alimentación: según modelo</li>
+                                <li>Protección IP65, si está certificada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/protector_tensiones.jpg" alt="Protector contra sobretensiones fotovoltaico">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Protección eléctrica</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Protector de Sobretensiones DC</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Ayuda a proteger los componentes de sistemas fotovoltaicos
+                            frente a sobretensiones transitorias.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 1,250.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Tipo: SPD para corriente continua</li>
+                                <li>Aplicación: sistemas fotovoltaicos</li>
+                                <li>Tensión máxima: según arreglo solar</li>
+                                <li>Instalación: riel DIN, según modelo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 13 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/kit_montaje.jpg" alt="Estructura de montaje para paneles solares">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Montaje fotovoltaico</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Kit de Montaje para Paneles Solares</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Accesorios de montaje para sujetar módulos fotovoltaicos
+                            a techos y estructuras compatibles.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 2,400.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Material: aluminio y accesorios metálicos</li>
+                                <li>Aplicación: montaje en techo</li>
+                                <li>Compatibilidad: según módulo y cubierta</li>
+                                <li>Contenido: según kit comercial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 14 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/bomba_sumergible.jpg" alt="Bomba de agua sumergible">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Bombas y energía</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Bomba de Agua Sumergible</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Equipo de bombeo para pozos y depósitos de agua, adecuado
+                            para aplicaciones de abastecimiento según sus especificaciones.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 6,800.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Potencia: 1 HP (0.746 kW)</li>
+                                <li>Alimentación: según modelo</li>
+                                <li>Material: acero inoxidable, según versión</li>
+                                <li>Caudal y altura: según ficha técnica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 15 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                        src="./assets/img/catalogo/medidor_digital.jpg" alt="Medidor digital de energía trifásico">
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark rounded-pill px-3">Medición eléctrica</span>
+                        </div>
+                        <h4 class="card-title fw-bold mb-2">Medidor Digital de Energía Trifásico</h4>
+                        <p class="card-text text-secondary small flex-grow-1">
+                            Instrumento para supervisar el consumo energético y consultar
+                            parámetros eléctricos en instalaciones trifásicas.
+                        </p>
+                        <div class="border-top pt-3 mt-3">
+                            <span class="fs-5 fw-bold text-success">L 2,150.00</span>
+                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                            <ul class="small mb-0">
+                                <li>Sistema: trifásico</li>
+                                <li>Medición: energía activa y tensión, según modelo</li>
+                                <li>Montaje: riel DIN o panel</li>
+                                <li>Comunicación RS-485: según versión</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                    </div>  
+                </div>        
             </section>
 
             <section id="ofertas">
