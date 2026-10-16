@@ -78,28 +78,28 @@
                         
                         <!--Producto maqueta original-->
                         <div class="col-12 col-md-6 col-lg-4">
-                                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
-                                    <img class="card-img-top" style="height: 220px; object-fit: cover;" src="" alt="">
-                                        <div class="card-body d-flex flex-column p-4">
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <span class="badge rounded-pill px-2.5">*Categoría: xxxxx</span>
-                                            </div>
-                                            <h4 class="card-title fw-bold mb-2">*Nombre del producto*</h4>
-                                            <p class="card-text text-secondary small flex-grow-1">Descripción del Producto</p>
-
-                                            <div class="border-top pt-3mt3 d-flex justify-content-between align-items-center">
-                                                <div>
-                                                    <span class="fs-5 fw-bold text-success">*Precio del producto: xxxx</span>
-                                                    <span class="fs-5 fw-bold text-success">
-                                                        Detalles Técnicos:
-                                                        <ul>
-                                                            <li>* los necesarios para dicho producto, por ejemplo: tension nominal en voltios, capacidad en kW/kVA, garantía en años, marca. </li>
-                                                        </ul> 
-                                                    </span>
-                                                </div>
-                                            </div>
+                            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                <img class="card-img-top" style="height: 220px; object-fit: cover;" src="" alt="">
+                                    <div class="card-body d-flex flex-column p-4">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <span class="badge bg-info text-dark rounded-pill px-3">*categoría*</span>
                                         </div>
-                                </div>
+                                        <h4 class="card-title fw-bold mb-2">*Nombre del producto*</h4>
+                                        <p class="card-text text-secondary small flex-grow-1">Descripción del Producto</p>
+
+                                        <div class="border-top pt-3 mt-3">
+                                            <span class="fs-5 fw-bold text-success">Precio</span>
+                                            <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                        <ul class="small mb-0">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                                
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                         
             <!-- Producto 1 -->
@@ -523,48 +523,202 @@
             </div>
 
 
-                    </div>  
-                </div>        
+            </div>  
+        </div>        
             </section>
 
             <section id="ofertas">
-                <h2>¡Grandes ofertas del mes!</h2>
-                
-                <!--Maqueta de los productos en liquidación-->
-                <article>
-                    
-                    <div>
-                        <div>
-                            
-                            <span>Pastillas de Chiquitolina</span>
-                            <span>OFERTA</span> <!--DEBE IR EN LA ESQUINA-->
-                            <span>Antes: Lps. 1000</span> <!--DEBE IR TACHADO-->
-                            <span>AHORA: Lps. 999</span> <!--DEBE RESALTAR-->
-                        
-                        </div>
+                <div class="container py-lg-4">
+                <!--Título de la sección de ofertas-->
+                     <div class="text-center mb-5">
 
-                        <img src="./assets/img/catalogo/">
+                            <span class="badge rounded-pill px-3 py-2 text-uppercase fw-bold text-warning">Ofertas | Liquidaciones</span>
+                            <h2 class="display-6 fw-bold mt-2">¡APROVECHA LAS GRANDES LIQUIDACIONES QUE TENEMOS PARA NUESTROS PRODUCTOS SELECCIONADOS!</h2>  
                     </div>
-                    
-                    <div>
-                        <span>Categoría: xxxxxxx</span>
-                        <span>Precio: Lps. 999</span>
-                        
-                        <div>
-                           <span>Detalles Técnicos: </span>
-                           <span>30 Pastillas</span>
-                           <span>500 MG</span>
-                           <span>Efecto dura hasta 1 hora</span> 
+                    <div class="row g-4">
+                        <!--Maqueta de los productos en liquidación-->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                                        <img class="card-img-top" style="height: 220px; object-fit: cover;" src="" alt="">
+                                            <div class="card-body d-flex flex-column p-4">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="badge text-dark rounded-pill px-3 bg-warning">*OFERTA*</span>
+                                                </div>
+                                                <h4 class="card-title fw-bold mb-2">*Nombre del producto*</h4>
+                                                <p class="card-text text-secondary small flex-grow-1">Descripción del Producto</p>
+        
+                                                <div class="border-top pt-3 mt-3">
+                                                    <span class="fs-5 fw-bold text-success">Precio anterior: <s>666</s></span>
+                                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo Precio: 555</p>
+                                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                                <ul class="small mb-0">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                                        
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+        
+                                
+                    <!-- Oferta 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                                src="./assets/img/catalogo/ofertas/panel_solar.jpg" alt="Panel solar en oferta">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">OFERTA</span>
+                                </div>
+                                <h4 class="card-title fw-bold mb-2">Panel Solar Monocristalino 450 W</h4>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Panel fotovoltaico ideal para ampliar sistemas solares residenciales
+                                    o comerciales. Excelente opción para aprovechar la energía solar.
+                                </p>
+                                <div class="border-top pt-3 mt-3">
+                                    <span class="small text-secondary">Precio anterior: <s>L 3,400.00</s></span>
+                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo precio: L 2,850.00</p>
+                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                    <ul class="small mb-0">
+                                        <li>Potencia: 450 W</li>
+                                        <li>Tipo: monocristalino</li>
+                                        <li>Aplicación: sistemas fotovoltaicos</li>
+                                        <li>Garantía: según fabricante</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-                    
-                </article>
+        
+                    <!-- Oferta 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                                src="./assets/img/catalogo/ofertas/reflector_led.jpg" alt="Reflector LED industrial en oferta">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">LIQUIDACIÓN</span>
+                                </div>
+                                <h4 class="card-title fw-bold mb-2">Reflector LED Industrial 100 W</h4>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Reflector de iluminación para patios, bodegas, talleres y
+                                    áreas de trabajo que necesitan buena visibilidad.
+                                </p>
+                                <div class="border-top pt-3 mt-3">
+                                    <span class="small text-secondary">Precio anterior: <s>L 950.00</s></span>
+                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo precio: L 699.00</p>
+                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                    <ul class="small mb-0">
+                                        <li>Potencia: 100 W</li>
+                                        <li>Iluminación: tecnología LED</li>
+                                        <li>Aplicación: interior o exterior, según protección</li>
+                                        <li>Temperatura de color: según modelo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Oferta 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                                src="./assets/img/catalogo/ofertas/breaker_termo.jpg" alt="Interruptor termomagnético en oferta">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">OFERTA</span>
+                                </div>
+                                <h4 class="card-title fw-bold mb-2">Breaker Termomagnético de 30 A</h4>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Interruptor diseñado para proteger circuitos eléctricos contra
+                                    sobrecargas y cortocircuitos en instalaciones compatibles.
+                                </p>
+                                <div class="border-top pt-3 mt-3">
+                                    <span class="small text-secondary">Precio anterior: <s>L 420.00</s></span>
+                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo precio: L 325.00</p>
+                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                    <ul class="small mb-0">
+                                        <li>Corriente nominal: 30 A</li>
+                                        <li>Tipo: termomagnético</li>
+                                        <li>Número de polos: según versión</li>
+                                        <li>Capacidad de interrupción: según fabricante</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Oferta 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                                src="./assets/img/catalogo/ofertas/controlador_solar.jpg" alt="Controlador de carga solar en oferta">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">LIQUIDACIÓN</span>
+                                </div>
+                                <h4 class="card-title fw-bold mb-2">Controlador Solar PWM de 30 A</h4>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Controlador de carga para pequeños sistemas solares que ayuda
+                                    a regular la energía enviada a la batería.
+                                </p>
+                                <div class="border-top pt-3 mt-3">
+                                    <span class="small text-secondary">Precio anterior: <s>L 780.00</s></span>
+                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo precio: L 549.00</p>
+                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                    <ul class="small mb-0">
+                                        <li>Corriente máxima: 30 A</li>
+                                        <li>Tecnología: PWM</li>
+                                        <li>Sistemas de batería: 12/24 V, según modelo</li>
+                                        <li>Protecciones: según fabricante</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Oferta 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img class="card-img-top" style="height: 220px; object-fit: cover;"
+                                src="./assets/img/catalogo/ofertas/cable_electrico_14awg.jpg" alt="Cable eléctrico en oferta">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark rounded-pill px-3">OFERTA</span>
+                                </div>
+                                <h4 class="card-title fw-bold mb-2">Cable Eléctrico de Cobre 14 AWG</h4>
+                                <p class="card-text text-secondary small flex-grow-1">
+                                    Conductor eléctrico para instalaciones compatibles, disponible
+                                    por metro para facilitar la compra según las necesidades del proyecto.
+                                </p>
+                                <div class="border-top pt-3 mt-3">
+                                    <span class="small text-secondary">Precio anterior: <s>L 15.00 / m</s></span>
+                                    <p class="fs-5 fw-bold text-success mb-2">Nuevo precio: L 11.50 / m</p>
+                                    <p class="fw-bold mt-2 mb-1">Detalles técnicos:</p>
+                                    <ul class="small mb-0">
+                                        <li>Calibre: 14 AWG</li>
+                                        <li>Material: cobre</li>
+                                        <li>Aislamiento: según presentación</li>
+                                        <li>Tensión nominal: según fabricante</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             </section>
 
 
             <section>
-                <h2>¡Realiza tus cotizaciones aquí!</h2>
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold mt-2">Realiza tus cotizaciones aquí</h2>  
+                </div>
 
                 <form>
                     <fieldset>
