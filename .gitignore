@@ -1,1 +1,7 @@
 Examen_machigua.zip
+.DS_Store
+Thumbs.db
+
+.vscode/
+
+*.log
