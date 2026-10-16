@@ -715,82 +715,162 @@
             </section>
 
 
-            <section>
-                <div class="text-center mb-5">
-                    <h2 class="display-6 fw-bold mt-2">Realiza tus cotizaciones aquí</h2>  
+            <section id="" class="py-5 bg-light">
+                
+                <div class="container py-lg-4">
+                    <div class="row justify-content-center">
+                        
+                        <div class="text-center mb-5">
+                            
+                            <span>Comercio Internacional</span>
+                            <h2>Solicitar Cotización de equipos industriales</h2>
+                            <p>Entregas por tierra y aire cuando sea posible.</p>
+        
+                        </div>
+        
+                        <form class="text-center mb-5">
+                            
+                            <div>
+        
+                                <div class="form-floating">
+                                    <div>
+                                        
+                                        <label for="cantidadUnidades">Ingrese la cantidad de unidades que desea: </label>
+                                        <input type="number" min="1" max="30" required>
+            
+                                    </div>
+                                </div>
+            
+                                <div class="form-floating">
+                                    <div>
+                                        
+                                        <label for="equipoCotizar">Elegir equipo a cotizar </label>
+                                        <select>
+                                            <option disabled selected>Elige tu equipo...</option>
+                                            <option>Panel Solar TOPCon 580W - L. 3,650</option>
+                                            <option>Inversor Híbrido 15 kW - L. 98,200</option>
+                                            <option>Arrancador Suave 75 HP - L. 46,900</option>
+                                            <option>Transformador 150 kVA - L. 285,000</option>
+                                        </select>
+            
+                                    </div>
+                                </div>
+            
+                                <div class="form-floating">
+                                    <div>
+                                        
+                                        <label for="ciudadEntrega">Elegir destino del equipo </label>
+                                        <select>
+                                            <option disabled selected>Elige tu destino...</option>
+                                            <option>San Pedro Sula - Flete L. 500</option>
+                                            <option>Tegucigalpa - Flete L. 1,200</option>
+                                            <option>Otras Regiones - Flete L. 2,000</option>
+                                            <option></option>
+                                        </select>
+            
+                                    </div>
+                                </div>
+            
+                                <div>
+            
+                                    <button>Calcular Presupuesto</button>
+            
+                                </div>
+                                <span class="text-muted small">Descuento comercial del 8% en la orden de 5 o más unidades</span>
+            
+                                <div class="w-25 mx-auto rounded-4 p-4 bg-light border font-monospace text-start">
+                                    <span class="fw-bold">El total estimado de su cotización es: </span>
+                                    <h4 class="fw-bold mt-3 mb-0"> L. 5000</h4>
+                                </div>
+                            </div>  
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="">
+            <div class="text-center mb-5">
+                        
+                <div>  
+                    <span>Equipos Varios</span>
+                    <h2>Tabla de Comparaciones</h2>
+                    <p>Comparación entre algunos de los equipos que tenemos a disposición, para que elijas el que más te convenga.</p>
+        
                 </div>
 
-                <form>
-                    <fieldset>
-                        <legend>Cotización en Línea</legend>
+                <!-- Envoltorio responsivo -->
+                <div class="table-responsive shadow-sm rounded-4 border">
+
+                    <!-- Tabla de comparaciones -->
+                    <table class="table table-hover table-striped align-middle mb-0">
+                        <thead class="table-primary">
+                            <th>Código</th>
+                            <th>Equipo industrial</th>
+                            <th>Tensión Nominal</th>
+                            <th>Capacidad</th>
+                            <th>Norma Técnica [IEE, UL, ASTM]</th>
+                            <th>Estado de Homologación ENEE</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EQ-001</td>
+                                <td>Panel Solar TOPCon</td>
+                                <td>56 V DC (Vmp)</td>
+                                <td>580 W</td>
+                                <td>IEC 61215, IEC 61730</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-success">Homologado</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>EQ-002</td>
+                                <td>Inversor Híbrido</td>
+                                <td>Entrada: 48 V DC / Salida: 120-240 V AC</td>
+                                <td>15 kW</td>
+                                <td>UL 1741, IEEE 1547</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-warning text-dark">En proceso</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>EQ-003</td>
+                                <td>Arrancador Suave</td>
+                                <td>380-480 V AC, trifásico</td>
+                                <td>75 HP</td>
+                                <td>IEC 60947-4-2, UL 60947-4-2</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-danger">No homologado</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>EQ-004</td>
+                                <td>Transformador de Potencia</td>
+                                <td>13.8 kV / 480 V AC</td>
+                                <td>150 kVA</td>
+                                <td>IEEE C57.12.00, IEC 60076</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-success">Homologado</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>EQ-005</td>
+                                <td>Interruptor Termomagnético</td>
+                                <td>240 V AC</td>
+                                <td>40 A</td>
+                                <td>UL 489, IEC 60947-2</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-warning text-dark">En Proceso</span></td>
+                            </tr>
+    
+                            <tr>
+                                <td>EQ-006</td>
+                                <td>Variador de Frecuencia</td>
+                                <td>380-480 V AC, trifásico</td>
+                                <td>10 HP</td>
+                                <td>IEC 61800-5-1, IEC 61800-3</td>
+                                <td><span class="badge rounded-pill px-3 py-2 bg-secondary">Requiere documentación</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
                         
-                        <div>
-                            <div>
-                                
-                                <label for="cantidadUnidades">Ingrese la cantidad de unidades que desea: </label>
-                                <input type="number" min="1" max="30" required>
-
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                
-                                <label for="equipoCotizar">Elegir equipo a cotizar </label>
-                                <select>
-                                    <option disabled selected>Elige tu equipo...</option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                
-                                <label for="ciudadEntrega">Elegir destino del equipo </label>
-                                <select>
-                                    <option disabled selected>Elige tu destino...</option>
-                                    <option>San Pedro Sula - Flete L. 500</option>
-                                    <option>Tegucigalpa - Flete L. 1,200</option>
-                                    <option>Otras Regiones - Flete L. 2,000</option>
-                                    <option></option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <span>*Descuento comercial del 8% en la orden de 5 o más unidades</span>
-
-                        <div>
-
-                            <button>Calcular Presupuesto</button>
-
-                        </div>
-
-                        <div>
-                            <span>El total estimado de su cotización es L. 5000</span>
-                        </div>
-                        
-                    </fieldset>
-                </form>
-            </section>
-
-            <section>
-
-                <table>
-                    <thead>
-                        <th>Código</th>
-                        <th>Equipo industrial</th>
-                        <th>Tensión Nominal</th>
-                        <th>Capacidad</th>
-                        <th>Norma Técnica [IEE, UL, ASTM]</th>
-                        <th>Estado de Homologación ENEE</th>
-                    </thead>
-                </table>
 
             </section>
 
