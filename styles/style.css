@@ -1,4 +1,16 @@
+:root{
+    --color-fondo: rgb(13, 202, 240)
+}
+
 .tamañoImagen {
     width: 85px;
     height: 85px;
+}
+
+footer{
+    background-color: var(--color-fondo);
+}
+
+nav{
+    background-color: var(--color-fondo);
 }

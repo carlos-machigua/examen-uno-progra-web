@@ -773,7 +773,7 @@
             
                                 <div>
             
-                                    <button>Calcular Presupuesto</button>
+                                    <button class="button btn-success rounded-pill border shadow-lg text-dark">Calcular Presupuesto</button>
             
                                 </div>
                                 <span class="text-muted small">Descuento comercial del 8% en la orden de 5 o más unidades</span>
@@ -874,81 +874,100 @@
 
             </section>
 
-             <section>
-                <h2>Requisitos y Licitación</h2>
+             <section class="py-5 bg-light" id="">
+                <div class="container py-lg-4">
+                    
+                    <div class="row justify-content-center">
+                    
+                        <div class="col-12 col-lg-8">
+                            <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+                            
+                                <div class="row g-3">
+                                    <span>Créditos | Licitaciones</span>
+                                    <h2>Formulario para Requisitos y Licitación</h2>
+                                    <p>Solicite cotización formal o crédito corporativo.</p>
+                                </div>
 
-                <form>
-                    <fieldset>
-                        <legend>Cotización en Línea</legend>
-                        
-                        <div>
-                            <div>
-                                
-                                <label for="cantidadUnidades">Ingrese la cantidad de unidades que desea: </label>
-                                <input type="number" min="1" max="30" required>
+                                <form>
+                                    <div>
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="nombreEmpresa">Ingrese el nombre de la empresa:</label>
+                                                <input type="text" required placeholder="Empresa...">
+                                            </div>
+                                        </div>
 
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="rtnEmpresa">Ingrese su RTN numérico:</label>
+                                                <input type="number" max="14" required placeholder="987321684...">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="correoEmpresa">Correo Electrónico corporativo:</label>
+                                                <input id="correoEmpresa" type="email" required placeholder="correo@extensión.com">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="numeroContacto">Teléfono de Contacto:</label>
+                                                <input id="numeroContacto" type="tel" required placeholder="2531-XXXX">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="equipoCotizar">Elige el departamento de entrega </label>
+                                                <select>
+                                                    <option disabled selected>Elige tu departamento...</option>
+                                                    <option>Cortés</option>
+                                                    <option>Francisco Morazán</option>
+                                                    <option>Comayagua</option>
+                                                    <option>Choluteca</option>
+                                                    <option>Olancho</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-floating">
+                                            <div>
+                                                <label for="rtnEmpresa">Al hacer click, acepta los términos y condiciones de nuestra garantía técnica y cotización</label>
+                                                <input type="checkbox" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- botones -->
+
+                                        <div class="align-items-center justify-content-center text-center gap-3 flex-wrap">
+                                            <button class="btn btn-lg rounded-pill fw-bold bg-success text-dark" type="submit">Enviar Formulario</button>
+                                            <button class="btn btn-lg rounded-pill fw-bold bg-warning text-dark" type="submit">Limpiar formulario</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
+                    </div>
 
-                        <div>
-                            <div>
-                                
-                                <label for="equipoCotizar">Elegir equipo a cotizar </label>
-                                <select>
-                                    <option disabled selected>Elige tu equipo...</option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                
-                                <label for="ciudadEntrega">Elegir destino del equipo </label>
-                                <select>
-                                    <option disabled selected>Elige tu destino...</option>
-                                    <option>San Pedro Sula - Flete L. 500</option>
-                                    <option>Tegucigalpa - Flete L. 1,200</option>
-                                    <option>Otras Regiones - Flete L. 2,000</option>
-                                    <option></option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <span>*Descuento comercial del 8% en la orden de 5 o más unidades</span>
-
-                        <div>
-
-                            <button>Calcular Presupuesto</button>
-
-                        </div>
-
-                        <div>
-                            <span>El total estimado de su cotización es L. 5000</span>
-                        </div>
-                        
-                    </fieldset>
-                </form>
+                
             </section>
         </main>
 
         <!--Los style embedidos son temporales solo para visualización-->
-        <footer style="background-color: rgb(27, 255, 2);">
-            <div>
+        <footer id="footer">
+            <div class="w-100 align-items-center justify-content-center text-center flex-wrap row">
                 <span>Anillo Periférico, Tegucigalpa - Tel: 2235-XXXX</span>
+                <span>Boulevard del Norte, San Pedro Sula - Tel: 2251-XXXX</span>
             </div>
 
-            <div>
+            <div class="w-100 align-items-start text-center gap-3 flex-wrap">
                 <span>Redes Sociales: </span>
                 <div>
-                    <a href="facebook.com/"><img src="./assets/img/logo_face.jpg" alt="Logo de facebook"></a>
-                    <a href="instagram.com/"><img src="./assets/img/logo_insta.jpg" alt="Logo de Instagram"></a>
-                    <a href="linkedin.com/"><img src="./assets/img/logo_linked.jpg" alt="Logo de LinkedIn"></a>
+                    <a href="facebook.com/"><img src="./assets/img/face_logo.png" width="40" height="40" alt="Logo de facebook"></a>
+                    <a href="instagram.com/"><img src="./assets/img/logo_instagram.png" width="80" height="40" alt="Logo de Instagram"></a>
+                    <a href="linkedin.com/"><img src="./assets/img/linkedin_logo.webp" width="40" height="40" alt="Logo de LinkedIn"></a>
                 </div>
             </div>
         </footer>
